@@ -1,0 +1,14 @@
+C:\Users\sidea\source\repos\WindowsFormsApp1\obj\Debug\TrabajoPracticoNumeroUno.csprojAssemblyReference.cache
+C:\Users\sidea\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormCalculadora.resources
+C:\Users\sidea\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\sidea\source\repos\WindowsFormsApp1\obj\Debug\TrabajoPracticoNumeroUno.csproj.GenerateResource.cache
+C:\Users\sidea\source\repos\WindowsFormsApp1\obj\Debug\TrabajoPracticoNumeroUno.csproj.CoreCompileInputs.cache
+C:\Users\sidea\source\repos\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\sidea\source\repos\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\sidea\source\repos\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\sidea\source\repos\WindowsFormsApp1\bin\Debug\Entidades.exe
+C:\Users\sidea\source\repos\WindowsFormsApp1\bin\Debug\Entidades.pdb
+C:\Users\sidea\source\repos\WindowsFormsApp1\bin\Debug\Entidades.exe.config
+C:\Users\sidea\source\repos\WindowsFormsApp1\obj\Debug\TrabajoPracticoNumeroUno.csproj.CopyComplete
+C:\Users\sidea\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\sidea\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

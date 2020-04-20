@@ -1,0 +1,11 @@
+C:\Users\sidea\source\repos\TrabajoPracticoNumeroUno\obj\Debug\TrabajoPracticoNumeroUno.csprojAssemblyReference.cache
+C:\Users\sidea\source\repos\TrabajoPracticoNumeroUno\obj\Debug\TrabajoPracticoNumeroUno.FormCalculadora.resources
+C:\Users\sidea\source\repos\TrabajoPracticoNumeroUno\obj\Debug\TrabajoPracticoNumeroUno.Properties.Resources.resources
+C:\Users\sidea\source\repos\TrabajoPracticoNumeroUno\obj\Debug\TrabajoPracticoNumeroUno.csproj.GenerateResource.cache
+C:\Users\sidea\source\repos\TrabajoPracticoNumeroUno\obj\Debug\TrabajoPracticoNumeroUno.csproj.CoreCompileInputs.cache
+C:\Users\sidea\source\repos\TrabajoPracticoNumeroUno\bin\Debug\TrabajoPracticoNumeroUno.exe.config
+C:\Users\sidea\source\repos\TrabajoPracticoNumeroUno\bin\Debug\TrabajoPracticoNumeroUno.exe
+C:\Users\sidea\source\repos\TrabajoPracticoNumeroUno\bin\Debug\TrabajoPracticoNumeroUno.pdb
+C:\Users\sidea\source\repos\TrabajoPracticoNumeroUno\obj\Debug\TrabajoPracticoNumeroUno.exe
+C:\Users\sidea\source\repos\TrabajoPracticoNumeroUno\obj\Debug\TrabajoPracticoNumeroUno.pdb
+C:\Users\sidea\source\repos\TrabajoPracticoNumeroUno\obj\Debug\TrabajoPracticoNumeroUno.Calculadora de Cristian Corsaro del curso 2° C.resources
