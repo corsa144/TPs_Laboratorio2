@@ -1,7 +1,0 @@
-C:\Users\sidea\source\repos\Entidades\bin\Debug\Entidades.exe.config
-C:\Users\sidea\source\repos\Entidades\bin\Debug\Entidades.exe
-C:\Users\sidea\source\repos\Entidades\bin\Debug\Entidades.pdb
-C:\Users\sidea\source\repos\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
-C:\Users\sidea\source\repos\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
-C:\Users\sidea\source\repos\Entidades\obj\Debug\Entidades.exe
-C:\Users\sidea\source\repos\Entidades\obj\Debug\Entidades.pdb
