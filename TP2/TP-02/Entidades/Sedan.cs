@@ -11,7 +11,7 @@ namespace Entidades
     public class Sedan : Vehiculo
     {
         public  enum ETipo { CuatroPuertas, CincoPuertas }
-        private ETipo tipo = ETipo.CuatroPuertas;
+        private ETipo tipo;
 
         /// <summary>
         /// Por defecto, TIPO será Monovolumen
@@ -20,12 +20,13 @@ namespace Entidades
         /// <param name="chasis"></param>
         /// <param name="color"></param>
         public Sedan(EMarca marca, string chasis, ConsoleColor color)
-            : base(chasis, marca, color)
+            : this(marca, chasis, color,ETipo.CuatroPuertas)
         {
+
         }
 
         public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo)
-            :this(marca, chasis, color)
+            :base(chasis, marca, color)
         {
             this.tipo = tipo;
         }

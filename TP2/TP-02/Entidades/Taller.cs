@@ -62,24 +62,21 @@ namespace Entidades
                     case ETipo.Camioneta:
                         if(v is Suv)
                         {
-                            Suv camioneta = (Suv) v;
-                            sb.AppendLine(camioneta.Mostrar());
+                            sb.AppendLine(v.Mostrar());
                         }
                         
                         break;
                     case ETipo.Moto:
                         if(v is Ciclomotor)
                         {
-                            Ciclomotor moto = (Ciclomotor)v;
-                            sb.AppendLine(moto.Mostrar());
+                            sb.AppendLine(v.Mostrar());
                         }
                         
                         break;
                     case ETipo.Automovil:
                         if(v is Sedan)
                         {
-                            Sedan auto = (Sedan)v;
-                            sb.AppendLine(auto.Mostrar());
+                            sb.AppendLine(v.Mostrar());
                         }
                         
                         break;
