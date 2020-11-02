@@ -1,0 +1,9 @@
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\bin\Debug\ClasesAbstractas.dll
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\bin\Debug\ClasesAbstractas.pdb
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\bin\Debug\Excepciones.dll
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\bin\Debug\Excepciones.pdb
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.csprojAssemblyReference.cache
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.csproj.CoreCompileInputs.cache
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.csproj.CopyComplete
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.dll
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.pdb
