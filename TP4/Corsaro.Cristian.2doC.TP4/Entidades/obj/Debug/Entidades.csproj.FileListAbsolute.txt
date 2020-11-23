@@ -1,0 +1,6 @@
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\Entidades\bin\Debug\Entidades.dll
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\Entidades\bin\Debug\Entidades.pdb
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\Entidades\obj\Debug\Entidades.dll
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\Entidades\obj\Debug\Entidades.pdb

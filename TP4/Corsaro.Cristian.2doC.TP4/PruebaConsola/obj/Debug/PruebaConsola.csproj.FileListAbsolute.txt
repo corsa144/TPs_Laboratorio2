@@ -1,0 +1,10 @@
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\PruebaConsola\bin\Debug\PruebaConsola.exe.config
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\PruebaConsola\bin\Debug\PruebaConsola.exe
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\PruebaConsola\bin\Debug\PruebaConsola.pdb
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\PruebaConsola\bin\Debug\Entidades.dll
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\PruebaConsola\bin\Debug\Entidades.pdb
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\PruebaConsola\obj\Debug\PruebaConsola.csprojAssemblyReference.cache
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\PruebaConsola\obj\Debug\PruebaConsola.csproj.CoreCompileInputs.cache
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\PruebaConsola\obj\Debug\PruebaConsola.csproj.CopyComplete
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\PruebaConsola\obj\Debug\PruebaConsola.exe
+C:\Users\sidea\source\repos\Corsaro.Cristian.2doC.TP4\PruebaConsola\obj\Debug\PruebaConsola.pdb
