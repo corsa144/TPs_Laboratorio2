@@ -1,0 +1,15 @@
+Clases: SPD
+Profesor: Nombre: 
+Apellido: 
+DNI: 12224458
+Nacionalidad: Argentino
+
+Legajo: 1
+
+CLASES DEL DÍA: 
+Clases del dia: SPD
+
+
+Alumnos:
+<-------------------------------------------------->
+
