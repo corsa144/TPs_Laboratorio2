@@ -1,6 +1,0 @@
-Cristian,2
-Cristian,2
-Cristian,Motorola,20000,Lenovo,30000,2
-Cristian,Motorola,20000,Lenovo,30000,2
-Cristian,Motorola,20000,Lenovo,30000,2
-Cristian,Motorola,20000,Lenovo,30000,2
