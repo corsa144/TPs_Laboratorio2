@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class FormCalculadora : Form
     {
+        #region Metodos
         /// <summary>
         /// inicia
         /// </summary>
@@ -32,7 +33,7 @@ namespace WindowsFormsApp1
             this.txtNumero1.Text = "";
             this.txtNumero2.Text = "";
             this.cmbOperador.Text = "";
-            this.lblResultado.Text = "";
+            this.lblResultado.Text = "Resultado";
         }
         /// <summary>
         /// al oprimir el boton limpiar llama a su metodo
@@ -54,19 +55,31 @@ namespace WindowsFormsApp1
         {
             return Calculadora.Operar(new Numero(numeroUno), new Numero(numeroDos), operador);
         }
-
+        /// <summary>
+        /// Realiza la operacion correspondiente en la calculadora
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
             double resultado;
             resultado = Operar(this.txtNumero1.Text, this.txtNumero2.Text, this.cmbOperador.Text);
             this.lblResultado.Text = resultado.ToString();
         }
-
+        /// <summary>
+        /// Cierra el formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             ActiveForm.Close();
         }
-
+        /// <summary>
+        /// Convierte de decimal a binario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             Numero numero = new Numero();
@@ -76,7 +89,11 @@ namespace WindowsFormsApp1
             }
 
         }
-
+        /// <summary>
+        /// convierte de binario a decimal
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvetirADecimal_Click(object sender, EventArgs e)
         {
             Numero numero = new Numero();
@@ -85,6 +102,6 @@ namespace WindowsFormsApp1
                 this.lblResultado.Text = numero.BinarioDecimal(this.lblResultado.Text);
             }
         }
-
+        #endregion
     }
 }

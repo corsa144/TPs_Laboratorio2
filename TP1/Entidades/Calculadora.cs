@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Calculadora
+    public static class Calculadora
     {
+        #region Metodos
         /// <summary>
         /// realiza las operaciones de la calculadora
         /// </summary>
@@ -49,5 +50,6 @@ namespace Entidades
             }
             return operador;
         }
+        #endregion
     }
 }

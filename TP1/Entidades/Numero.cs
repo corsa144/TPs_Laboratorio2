@@ -8,8 +8,10 @@ namespace Entidades
 {
     public class Numero
     {
+        #region Atributos
         private double numero;
-
+        #endregion
+        #region Propiedades
         private string SetNumero
         {
             set
@@ -17,6 +19,8 @@ namespace Entidades
                 this.numero = ValidarNumero(value);
             }
         }
+        #endregion
+        #region Constructores
         /// <summary>
         /// constructor por defecto
         /// </summary>
@@ -36,6 +40,8 @@ namespace Entidades
         {
             this.SetNumero = strNumero;
         }
+        #endregion
+        #region Metodos
         /// <summary>
         /// comprueba que el valor recibido sea numerico
         /// </summary>
@@ -112,26 +118,27 @@ namespace Entidades
         /// <returns>devuelve un string con el numero en caso de exito o con un mensaje de error</returns>
         public string BinarioDecimal(string numeroBinario)
         {
-
             ulong enteroAux;
             ulong numeroDecimal = 0;
             ulong multiplicador = 1;
             char[] caracterActual;
+            if(EsBinario(numeroBinario) && ulong.TryParse(numeroBinario, out enteroAux))
+            {
+                caracterActual = numeroBinario.ToCharArray();
 
-            if (!(EsBinario(numeroBinario)) || !(ulong.TryParse(numeroBinario, out enteroAux)))
+                for (int i = caracterActual.Length - 1; i >= 0; i--)
+                {
+                    if (caracterActual[i] == '1')
+                    {
+                        numeroDecimal += multiplicador;
+                    }
+                    multiplicador = multiplicador * 2;
+
+                }
+            }
+            else
             {
                 return "Valor invalido!";
-            }
-            caracterActual = numeroBinario.ToCharArray();
-
-            for (int i = caracterActual.Length - 1; i >= 0; i--)
-            {
-                if (caracterActual[i] == '1')
-                {
-                    numeroDecimal += multiplicador;
-                }
-                multiplicador = multiplicador * 2;
-
             }
             return numeroDecimal.ToString();
 
@@ -165,7 +172,7 @@ namespace Entidades
         {
             return numeroUno.numero * numeroDos.numero;
         }
-
+        #endregion
 
     }
 }

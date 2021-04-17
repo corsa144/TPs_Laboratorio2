@@ -145,7 +145,7 @@
             this.MinimizeBox = false;
             this.Name = "FormCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Calculadora de Cristian Corsaro del 2°C";
+            this.Text = "Calculadora de Cristian Corsaro del curso 2°C";
             this.ResumeLayout(false);
             this.PerformLayout();
 
