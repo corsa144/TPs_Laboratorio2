@@ -1,0 +1,10 @@
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\AplicacionDeConsola\bin\Debug\AplicacionDeConsola.exe.config
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\AplicacionDeConsola\bin\Debug\AplicacionDeConsola.exe
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\AplicacionDeConsola\bin\Debug\AplicacionDeConsola.pdb
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\AplicacionDeConsola\bin\Debug\Entidades.dll
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\AplicacionDeConsola\bin\Debug\Entidades.pdb
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\AplicacionDeConsola\obj\Debug\AplicacionDeConsola.csprojAssemblyReference.cache
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\AplicacionDeConsola\obj\Debug\AplicacionDeConsola.csproj.CoreCompileInputs.cache
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\AplicacionDeConsola\obj\Debug\AplicacionDeConsola.csproj.CopyComplete
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\AplicacionDeConsola\obj\Debug\AplicacionDeConsola.exe
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\AplicacionDeConsola\obj\Debug\AplicacionDeConsola.pdb

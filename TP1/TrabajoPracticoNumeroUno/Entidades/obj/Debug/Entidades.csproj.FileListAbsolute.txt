@@ -1,0 +1,6 @@
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\Entidades\bin\Debug\Entidades.dll
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\Entidades\bin\Debug\Entidades.pdb
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\Entidades\obj\Debug\Entidades.dll
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP1\TrabajoPracticoNumeroUno\Entidades\obj\Debug\Entidades.pdb
