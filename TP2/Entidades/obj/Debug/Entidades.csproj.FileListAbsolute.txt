@@ -17,3 +17,9 @@ C:\Users\sidea\Desktop\TP-02\Entidades\obj\Debug\Entidades.dll
 C:\Users\sidea\Desktop\TP-02\Entidades\obj\Debug\Entidades.pdb
 C:\Users\sidea\Desktop\TP-02\Entidades\bin\Debug\Entidades.dll
 C:\Users\sidea\Desktop\TP-02\Entidades\bin\Debug\Entidades.pdb
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP2\Entidades\bin\Debug\Entidades.dll
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP2\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP2\Entidades\obj\Debug\Entidades.dll
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP2\Entidades\obj\Debug\Entidades.pdb
