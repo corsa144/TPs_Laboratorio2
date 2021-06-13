@@ -1,9 +1,0 @@
-C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\bin\Debug\ClasesAbstractas.dll
-C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\bin\Debug\ClasesAbstractas.pdb
-C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\bin\Debug\Excepciones.dll
-C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\bin\Debug\Excepciones.pdb
-C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\obj\Debug\EntidadesAbstractas.csprojAssemblyReference.cache
-C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\obj\Debug\EntidadesAbstractas.csproj.CoreCompileInputs.cache
-C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\obj\Debug\EntidadesAbstractas.csproj.CopyComplete
-C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.dll
-C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.pdb

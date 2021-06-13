@@ -1,0 +1,15 @@
+1000,Motorola123,20000,Lenovo,40000,2
+1000,Motorola123,20000,Lenovo,40000,2
+1000,(Motorola123),20000,Lenovo,40000,2
+1000,Motorola,20000
+Lenovo,40000
+1000,Motorola,20000
+Lenovo,40000
+1000,Motorola,20000
+Lenovo,40000
+1000,Motorola,20000
+Lenovo,40000
+1000,Motorola,20000
+Lenovo,40000
+1000,Motorola,20000
+Lenovo,40000

@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace Excepciones
 {
-    public class ArchivosException:Exception
+    public class ArchivosException : Exception
     {
-        public ArchivosException(Exception innerException) : base("",innerException)
+        public ArchivosException(string mensaje) : base(mensaje)
+        {
+
+        }
+
+        public ArchivosException(string mensaje, Exception innerException) 
+            : base(mensaje, innerException)
         {
 
         }

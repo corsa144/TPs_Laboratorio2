@@ -54,6 +54,7 @@ namespace Entidades
             sb.AppendFormat("CHASIS: {0}\r\n", p.chasis);
             sb.AppendFormat("MARCA : {0}\r\n", p.marca.ToString());
             sb.AppendFormat("COLOR : {0}\r\n", p.color.ToString());
+            sb.AppendFormat("TAMAÑO : {0}\r\n", p.Tamanio);
             sb.AppendLine("---------------------");
 
             return sb.ToString();
