@@ -8,7 +8,6 @@ using System.Xml.Serialization;
 namespace Entidades
 {
     [Serializable]
-    [XmlInclude(typeof(Celular))]
     public class Celular:Producto
     {
         public enum SistemaOperativo
@@ -17,8 +16,8 @@ namespace Entidades
             IOS
         }
         private SistemaOperativo sistema;
-
-        public SistemaOperativo Sistema { get
+        public SistemaOperativo Sistema {
+            get
             {
                 return this.sistema;
             }
@@ -47,8 +46,8 @@ namespace Entidades
         {
             StringBuilder mensaje = new StringBuilder();
             mensaje.Append("Celular,");
-            mensaje.AppendLine(base.ToString());
-            mensaje.AppendLine($"{this.Sistema},");
+            mensaje.Append(base.ToString());
+            mensaje.Append($"{this.Sistema},");
             return mensaje.ToString();
         }
     }

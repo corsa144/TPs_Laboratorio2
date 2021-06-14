@@ -42,7 +42,7 @@
             this.btnLeerTexto.Location = new System.Drawing.Point(24, 193);
             this.btnLeerTexto.Name = "btnLeerTexto";
             this.btnLeerTexto.Size = new System.Drawing.Size(130, 45);
-            this.btnLeerTexto.TabIndex = 4;
+            this.btnLeerTexto.TabIndex = 2;
             this.btnLeerTexto.Text = "Leer";
             this.btnLeerTexto.UseVisualStyleBackColor = true;
             this.btnLeerTexto.Click += new System.EventHandler(this.btnLeerTexto_Click);
@@ -52,7 +52,7 @@
             this.btnGuardarTexto.Location = new System.Drawing.Point(177, 193);
             this.btnGuardarTexto.Name = "btnGuardarTexto";
             this.btnGuardarTexto.Size = new System.Drawing.Size(134, 45);
-            this.btnGuardarTexto.TabIndex = 11;
+            this.btnGuardarTexto.TabIndex = 3;
             this.btnGuardarTexto.Text = "Guardar";
             this.btnGuardarTexto.UseVisualStyleBackColor = true;
             this.btnGuardarTexto.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -62,7 +62,7 @@
             this.btnAgregarProducto.Location = new System.Drawing.Point(328, 193);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
             this.btnAgregarProducto.Size = new System.Drawing.Size(130, 45);
-            this.btnAgregarProducto.TabIndex = 12;
+            this.btnAgregarProducto.TabIndex = 4;
             this.btnAgregarProducto.Text = "Agregar producto";
             this.btnAgregarProducto.UseVisualStyleBackColor = true;
             this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
@@ -81,7 +81,7 @@
             this.nudCantidad.Location = new System.Drawing.Point(177, 95);
             this.nudCantidad.Name = "nudCantidad";
             this.nudCantidad.Size = new System.Drawing.Size(120, 20);
-            this.nudCantidad.TabIndex = 15;
+            this.nudCantidad.TabIndex = 1;
             this.nudCantidad.Value = new decimal(new int[] {
             100,
             0,
@@ -93,7 +93,7 @@
             this.rtbMostrar.Location = new System.Drawing.Point(12, 270);
             this.rtbMostrar.Name = "rtbMostrar";
             this.rtbMostrar.Size = new System.Drawing.Size(454, 207);
-            this.rtbMostrar.TabIndex = 16;
+            this.rtbMostrar.TabIndex = 5;
             this.rtbMostrar.Text = "";
             // 
             // FabricaForm

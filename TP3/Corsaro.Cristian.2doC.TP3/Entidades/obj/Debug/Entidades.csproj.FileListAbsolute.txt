@@ -42,3 +42,14 @@ C:\Users\sidea\Desktop\TP3\Corsaro.Cristian.2doC.TP3\Entidades\obj\Debug\Entidad
 C:\Users\sidea\Desktop\TP3\Corsaro.Cristian.2doC.TP3\Entidades\obj\Debug\Entidades.pdb
 C:\Users\sidea\Desktop\TP3\Corsaro.Cristian.2doC.TP3\Entidades\bin\Debug\Archivos.dll
 C:\Users\sidea\Desktop\TP3\Corsaro.Cristian.2doC.TP3\Entidades\bin\Debug\Archivos.pdb
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\Entidades\bin\Debug\Entidades.dll
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\Entidades\bin\Debug\Entidades.pdb
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\Entidades\bin\Debug\Archivos.dll
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\Entidades\bin\Debug\Excepciones.dll
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\Entidades\bin\Debug\Archivos.pdb
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\Entidades\bin\Debug\Excepciones.pdb
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\Entidades\obj\Debug\Entidades.dll
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\Entidades\obj\Debug\Entidades.pdb

@@ -8,7 +8,6 @@ using System.Xml.Serialization;
 namespace Entidades
 {
     [Serializable]
-    [XmlInclude(typeof(Computadora))]
     public class Computadora :Producto
     {
         public enum TipoComputadora

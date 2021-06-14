@@ -1,3 +1,2 @@
-Computadora,1,lalalala,12548,True,Escritorio,Windows,Celular,2,pepepepepe,123459,False,
-Android,
-Computadora,1,laal,123,True,Escritorio,Windows,Computadora,2,pepepe,369,False,Escritorio,Windows,Computadora,1,lalalalal,12356,True,Escritorio,Windows,Computadora,2,pepepepep,963,False,Escritorio,Windows,Computadora,1,lalaal,1235,True,Escritorio,Windows,Computadora,2,pepepepe,3698,False,Escritorio,Windows,Computadora,1,lalalal,1234,True,Escritorio,Windows,Computadora,2,pepepepep,12576,False,Escritorio,Windows,Computadora,1,papapapap,12345,True,Escritorio,Windows,Computadora,2,lallalala,3587,False,Escritorio,Windows,
+Computadora,1,lalalala,123456,True,Escritorio,Windows,
+Celular,2,pepepepe,8569,False,Android,

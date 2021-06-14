@@ -22,7 +22,11 @@ namespace VentasForm
             this.fabrica = fabrica;
             InitializeComponent();
         }
-
+        /// <summary>
+        /// agrega un producto a la fabrica
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             try
@@ -134,7 +138,11 @@ namespace VentasForm
             }
 
         }
-
+        /// <summary>
+        /// carga valores por defecto en los combo box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormProducto_Load(object sender, EventArgs e)
         {
             this.cmbProducto.Items.Add("Computadora");
@@ -168,7 +176,11 @@ namespace VentasForm
             this.cmbTipoComputadora.SelectedText = "Notebook";
             */
         }
-
+        /// <summary>
+        /// habilita o deshabilita controles del formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cmbProducto_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(this.cmbProducto.SelectedIndex == 0)

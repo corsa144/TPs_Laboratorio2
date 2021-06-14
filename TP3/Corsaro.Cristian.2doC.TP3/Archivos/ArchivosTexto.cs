@@ -21,10 +21,10 @@ namespace Archivos
             StreamWriter streamWriter = null;
             try
             {
-                streamWriter = new StreamWriter(archivo, true);
+                streamWriter = new StreamWriter(archivo, false);
                 foreach(T dato in datos)
                 {
-                    streamWriter.Write(dato.ToString());
+                    streamWriter.WriteLine(dato.ToString());
                 }
                 seGuardo = true;
             }catch(Exception ex)
@@ -55,8 +55,8 @@ namespace Archivos
                 string newLine = streamReader.ReadLine();
                 while (newLine != null)
                 {
-                    newLine = streamReader.ReadLine();
                     datos.Add(newLine);
+                    newLine = streamReader.ReadLine();
                 }
                 seLeyo = true;
             }

@@ -155,8 +155,7 @@ namespace Entidades
                     {
                         fabrica.Taller.Add(computadora);
                     }
-                }
-                else
+                }else if(campos[0] == "Celular")
                 {
                     Celular.SistemaOperativo sistema;
                     if (campos[4] == "0")
@@ -186,9 +185,9 @@ namespace Entidades
         public bool GuardarXml()
         {
             string ruta = Directory.GetCurrentDirectory() + @"\StockDeProductos.xml";
-            ArchivosXml<Producto> stockXml = new ArchivosXml<Producto>();
+            ArchivosXml<List<Producto>> stockXml = new ArchivosXml<List<Producto>>();
 
-            if (stockXml.Guardar(ruta, this.Stock))
+            if (stockXml.Guardar(ruta, this.Productos))
             {
                 return true;
             }
@@ -201,11 +200,11 @@ namespace Entidades
         /// <returns></returns>
         public Fabrica LeerXml()
         {
-            string ruta = Environment.SpecialFolder.Desktop + @"\StockDeProductos.xml";
+            string ruta = Directory.GetCurrentDirectory() + @"\StockDeProductos.xml";
             List<Producto> productos = new List<Producto>();
             Fabrica fabrica = GetFabrica();
-            ArchivosXml<Producto> archivoXml = new ArchivosXml<Producto>();
-            archivoXml.Leer(ruta,out productos);
+            ArchivosXml<List<Producto>> archivoXml = new ArchivosXml<List<Producto>>();
+            //archivoXml.Leer(ruta,out fabrica);
             fabrica.Stock = productos;
 
             return fabrica;
@@ -225,6 +224,8 @@ namespace Entidades
         {
             if(!ReferenceEquals(null, this.Productos))
             {
+                this.Stock.Clear();
+                this.Taller.Clear();
                 foreach(Producto p in this.Productos)
                 {
                     if (ControlDeCalidad(p))

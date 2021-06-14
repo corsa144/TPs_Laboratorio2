@@ -31,8 +31,10 @@ namespace VentasForm
             try
             {
                 fabrica = fabrica.LeerTexto();
+                this.rtbMostrar.Text = fabrica.MostrarProductos();
                 fabrica = fabrica.LeerXml();
-            }catch(ArchivosException ex)
+            }
+            catch(ArchivosException ex)
             {
                 MessageBox.Show($"{ex.Message}");
             }
@@ -43,7 +45,11 @@ namespace VentasForm
             //this.Cargar_ComboBox();
             //this.cmbProductos.SelectedItem = "Computadora";
         }
-
+        /// <summary>
+        /// Guarda en archivo de texto y en xml
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if(!object.ReferenceEquals(fabrica,null))
@@ -77,8 +83,14 @@ namespace VentasForm
         {
             FormProducto formularioProducto = new FormProducto(fabrica);
             formularioProducto.ShowDialog();
-            this.rtbMostrar.Text = fabrica.MostrarProductos();
+            mostrarProductos();
             //this.Cargar_ComboBox();
+        }
+
+        private void mostrarProductos()
+        {
+            this.rtbMostrar.Text = string.Empty;
+            this.rtbMostrar.Text = fabrica.MostrarProductos();
         }
     }
 }

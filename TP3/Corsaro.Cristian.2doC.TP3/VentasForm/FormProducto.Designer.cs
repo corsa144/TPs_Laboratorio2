@@ -83,7 +83,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(34, 403);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(177, 74);
-            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "Agregar producto";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -101,7 +101,7 @@
             this.txtCodigo.Location = new System.Drawing.Point(34, 188);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(177, 20);
-            this.txtCodigo.TabIndex = 7;
+            this.txtCodigo.TabIndex = 2;
             // 
             // lblCodigo
             // 
@@ -151,7 +151,7 @@
             this.cmbProducto.Location = new System.Drawing.Point(250, 38);
             this.cmbProducto.Name = "cmbProducto";
             this.cmbProducto.Size = new System.Drawing.Size(121, 21);
-            this.cmbProducto.TabIndex = 11;
+            this.cmbProducto.TabIndex = 4;
             this.cmbProducto.SelectedIndexChanged += new System.EventHandler(this.cmbProducto_SelectedIndexChanged);
             // 
             // cmbSistemaComputadora
@@ -160,7 +160,7 @@
             this.cmbSistemaComputadora.Location = new System.Drawing.Point(250, 112);
             this.cmbSistemaComputadora.Name = "cmbSistemaComputadora";
             this.cmbSistemaComputadora.Size = new System.Drawing.Size(121, 21);
-            this.cmbSistemaComputadora.TabIndex = 12;
+            this.cmbSistemaComputadora.TabIndex = 5;
             // 
             // cmbSistemaCelular
             // 
@@ -168,7 +168,7 @@
             this.cmbSistemaCelular.Location = new System.Drawing.Point(250, 187);
             this.cmbSistemaCelular.Name = "cmbSistemaCelular";
             this.cmbSistemaCelular.Size = new System.Drawing.Size(121, 21);
-            this.cmbSistemaCelular.TabIndex = 13;
+            this.cmbSistemaCelular.TabIndex = 6;
             // 
             // cmbTipoComputadora
             // 
@@ -176,7 +176,7 @@
             this.cmbTipoComputadora.Location = new System.Drawing.Point(250, 256);
             this.cmbTipoComputadora.Name = "cmbTipoComputadora";
             this.cmbTipoComputadora.Size = new System.Drawing.Size(121, 21);
-            this.cmbTipoComputadora.TabIndex = 14;
+            this.cmbTipoComputadora.TabIndex = 7;
             // 
             // FormProducto
             // 

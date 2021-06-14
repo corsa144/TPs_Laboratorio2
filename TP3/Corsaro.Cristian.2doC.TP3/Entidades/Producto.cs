@@ -9,7 +9,6 @@ using System.Xml.Serialization;
 namespace Entidades
 {
     [Serializable]
-    [XmlInclude(typeof(Producto))]
     public class Producto
     {
         #region Atributos
@@ -43,6 +42,7 @@ namespace Entidades
         /// <summary>
         /// Costo del producto. Debe ser mayor a 1. 
         /// </summary>
+        
         public double Costo
         {
             get
