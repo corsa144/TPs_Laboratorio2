@@ -39,6 +39,10 @@ namespace FabricaForm
             {
                 MessageBox.Show($"{ex.Message}");
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}");
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -71,6 +75,10 @@ namespace FabricaForm
                 catch (ArchivosException)
                 {
                     MessageBox.Show("No se puede guardar.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"{ex.Message}");
                 }
             }
             else

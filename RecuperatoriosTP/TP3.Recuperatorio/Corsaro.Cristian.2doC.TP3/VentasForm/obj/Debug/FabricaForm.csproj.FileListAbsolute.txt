@@ -52,3 +52,5 @@ C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\Venta
 C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\VentasForm\obj\Debug\VentasForm.pdb
 C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\VentasForm\obj\Debug\FabricaForm.FormProducto.resources
 C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\VentasForm\obj\Debug\FabricaForm.FormFabrica.resources
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\VentasForm\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\sidea\source\repos\TPs_Laboratorio2\TP3\Corsaro.Cristian.2doC.TP3\VentasForm\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll

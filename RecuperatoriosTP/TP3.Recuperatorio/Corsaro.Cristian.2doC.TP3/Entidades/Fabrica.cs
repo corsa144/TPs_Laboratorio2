@@ -191,12 +191,18 @@ namespace Entidades
                     celulares.Add((Celular)p);
                 }
             }
-            string ruta = Directory.GetCurrentDirectory() + @"\Celulares.xml";
-            ArchivosXml<List<Celular>> stockXml = new ArchivosXml<List<Celular>>();
-
-            if (stockXml.Guardar(ruta, celulares))
+            try
             {
-                return true;
+                string ruta = Directory.GetCurrentDirectory() + @"\Celulares.xml";
+                ArchivosXml<List<Celular>> stockXml = new ArchivosXml<List<Celular>>();
+
+                if (stockXml.Guardar(ruta, celulares))
+                {
+                    return true;
+                }
+            }catch(Exception)
+            {
+                throw new ArchivosException("Error al guardar en xml");
             }
 
             return false;
@@ -209,10 +215,16 @@ namespace Entidades
         {
             string ruta = Directory.GetCurrentDirectory() + @"\Celulares.xml";
             List<Celular> celulares = new List<Celular>();
-            //List<Producto> productos = new List<Producto>();
-            Fabrica fabrica = GetFabrica(this.AlmacenDeProductos);
-            ArchivosXml<List<Celular>> archivoXml = new ArchivosXml<List<Celular>>();
-            archivoXml.Leer(ruta,out celulares);
+            try
+            {
+                Fabrica fabrica = GetFabrica(this.AlmacenDeProductos);
+                ArchivosXml<List<Celular>> archivoXml = new ArchivosXml<List<Celular>>();
+                archivoXml.Leer(ruta, out celulares);
+            }
+            catch (Exception)
+            {
+                throw new ArchivosException("Error al intentar leer el archivo!");
+            }
             foreach(Celular c in celulares)
             {
                 fabrica.Productos.Add(c);

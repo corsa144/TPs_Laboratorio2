@@ -1,1 +1,1 @@
-Computadora,7,lenovodos,135778,False,Notebook,Windows,
+Computadora,7,lenovodos,135778,False,Notebook,SinSistemaOperativo,
