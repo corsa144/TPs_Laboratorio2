@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B3ED7E36-CAEC-45D7-92CF-E0E33CCF5ED4}</ProjectGuid>
+    <ProjectGuid>{CAF413CE-18BA-4B04-9025-3C1407F9FF47}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Excepciones</RootNamespace>
@@ -41,12 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlumnoRepetidoExcepcion.cs" />
     <Compile Include="ArchivosException.cs" />
-    <Compile Include="DNIInvalidoExcepcion.cs" />
-    <Compile Include="NacionalidadInvalidaException.cs" />
+    <Compile Include="NombreProductoExeption.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SinProfesorExcepcion.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
