@@ -35,7 +35,7 @@ namespace Entidades
         public Fabrica(UInt32 almacenamiento)
             :this()
         {
-            this.AlmacenDeProductos = almacenamiento;
+            this.almacenDeProductos = almacenamiento;
         }
         #endregion
         #region Propiedades
@@ -172,7 +172,7 @@ namespace Entidades
                     }
                     Computadora computadora = new Computadora(int.Parse(campos[1]), campos[2], double.Parse(campos[3]),
                         tipo, eSistema, bool.Parse(campos[4]));
-                    fabrica.Productos.Add(computadora);
+                    fabrica.Productos.Add(computadora);                    
                 }
             }
             return fabrica;
@@ -188,7 +188,7 @@ namespace Entidades
             {
                 if(p is Celular)
                 {
-                    celulares.Add((Celular)p);
+                    celulares.Add((Celular)p);                    
                 }
             }
             try
@@ -242,9 +242,10 @@ namespace Entidades
         /// Envía el producto al stock o al taller según corresponda
         /// </summary>
         /// <param name="productos">Lista de productos</param>
-        /// <returns>Devuelve la clase</returns>
-        public void DerivarProductos()
+        /// <returns>Devuelve si pudo guardar en stock o en taller</returns>
+        public bool DerivarProductos()
         {
+            bool seGuardo = false;
             if(!ReferenceEquals(null, this.Productos))
             {
                 this.Stock.Clear();
@@ -253,14 +254,19 @@ namespace Entidades
                 {
                     if (ControlDeCalidad(p))
                     {
-                        this.Stock.Add(p);
+                        this.Stock = this.Stock + p;
+                        //this.Stock.Add(p);
+                        seGuardo = true;
                     }
                     else
                     {
-                        this.Taller.Add(p);
+                        // this.Taller.Add(p);
+                        this.Taller = this.Taller + p;
+                        seGuardo = true;
                     }
                 }
             }
+            return seGuardo;
         }
         /// <summary>
         /// Muestra los productos separando stock de taller

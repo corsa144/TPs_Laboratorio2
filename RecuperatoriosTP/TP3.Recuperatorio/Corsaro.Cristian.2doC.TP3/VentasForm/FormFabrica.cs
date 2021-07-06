@@ -31,8 +31,8 @@ namespace FabricaForm
             try
             {
                 fabrica.Productos.Clear();//para que se guarde una sola vez limpio la lista de productos
-                fabrica = fabrica.LeerTexto();
-                fabrica = fabrica.LeerXml();
+                fabrica = fabrica.LeerTexto();//leo las computadoras
+                fabrica = fabrica.LeerXml();//leo los celulares
                 mostrarProductos();
             }
             catch(ArchivosException ex)
@@ -61,8 +61,8 @@ namespace FabricaForm
             {
                 try
                 {
-                    fabrica.Guardar();
-                    if (fabrica.GuardarXml())
+                    fabrica.Guardar();//Guardo en archivo de texto las computadoras
+                    if (fabrica.GuardarXml())//guardo en xml los celulares
                     {
                         MessageBox.Show("Se guardaron los celulares");
                     }

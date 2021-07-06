@@ -1,2 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ArrayOfCelular xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfCelular xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Celular>
+    <Costo>21000</Costo>
+    <Nombre>Motorola</Nombre>
+    <Codigo>9</Codigo>
+    <PasoControlCalidad>true</PasoControlCalidad>
+    <Sistema>Android</Sistema>
+  </Celular>
+</ArrayOfCelular>

@@ -82,8 +82,11 @@ namespace FabricaForm
                         Enum.TryParse<Computadora.TipoComputadora>(cmbTipoComputadora.SelectedValue.ToString(), out tipo);
                         computadora = new Computadora(int.Parse(this.txtCodigo.Text), this.txtNombre.Text, int.Parse(this.txtPrecio.Text), tipo,
                             sistemaOperativo, this.rBStock.Checked);
-                        this.fabrica.Productos.Add(computadora);
-                        MessageBox.Show("Se agrego una computadora!");
+                        this.fabrica.Productos = this.fabrica.Productos + computadora;
+                        
+                            //this.fabrica.Productos.Add(computadora);
+                        //MessageBox.Show("Se agrego una computadora!");
+                                       
                     }
                     else
                     {
@@ -133,8 +136,9 @@ namespace FabricaForm
 
                         celular = new Celular(int.Parse(this.txtCodigo.Text), this.txtNombre.Text, int.Parse(this.txtPrecio.Text),
                             cSistemas, this.rBStock.Checked);
-                        this.fabrica.Productos.Add(celular);
-                        MessageBox.Show("Se agrego un Celular!");
+                        this.fabrica.Productos = this.fabrica.Productos + celular;
+                        //this.fabrica.Productos.Add(celular);
+                        //MessageBox.Show("Se agrego un Celular!");
                     }
                     this.Close();
                 }

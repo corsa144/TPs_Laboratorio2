@@ -41,17 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArchivoTexto.cs" />
+    <Compile Include="ArchivosXml.cs" />
     <Compile Include="Celular.cs" />
     <Compile Include="Computadora.cs" />
-    <Compile Include="ConexionSQL.cs" />
-    <Compile Include="ExtensionPrecio.cs" />
-    <Compile Include="IArchivos.cs" />
+    <Compile Include="ExtensionCosto.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Venta.cs" />
+    <Compile Include="Fabrica.cs" />
+    <Compile Include="SQL.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Archivos\Archivos.csproj">
+      <Project>{f93751c3-5feb-44c5-9960-5fc67723d4f5}</Project>
+      <Name>Archivos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Excepciones\Excepciones.csproj">
       <Project>{caf413ce-18ba-4b04-9025-3c1407f9ff47}</Project>
       <Name>Excepciones</Name>

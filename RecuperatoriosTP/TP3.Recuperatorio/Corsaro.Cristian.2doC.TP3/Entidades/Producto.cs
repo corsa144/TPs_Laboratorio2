@@ -153,6 +153,31 @@ namespace Entidades
         {
             return !(p1 == p2);
         }
+        /// <summary>
+        /// verifico que el producto no este en la lista de productos mediante el codigo
+        /// </summary>
+        /// <param name="lista"></param>
+        /// <param name="p"></param>
+        /// <returns></returns>
+        public static List<Producto> operator +(List<Producto> lista, Producto p)
+        {
+            bool flag = false;
+            if (!ReferenceEquals(lista, null))
+            {
+                foreach(Producto prod in lista)
+                {
+                    if(p == prod)
+                    {
+                        flag = true;
+                    }
+                }
+                if (!flag)
+                {
+                    lista.Add(p);
+                }
+            }
+            return lista;
+        }
         #endregion
     }
 }

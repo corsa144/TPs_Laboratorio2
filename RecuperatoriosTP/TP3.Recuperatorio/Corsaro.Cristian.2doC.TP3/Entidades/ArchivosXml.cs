@@ -16,7 +16,7 @@ namespace Entidades
         {
             bool seGuardo = false; 
             
-            using (XmlTextWriter escritor = new XmlTextWriter(archivo, Encoding.UTF8))
+            using (XmlTextWriter escritor = new XmlTextWriter(archivo,Encoding.UTF8))
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(T));
                 escritor.Formatting = Formatting.Indented;

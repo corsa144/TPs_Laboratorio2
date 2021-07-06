@@ -4,75 +4,56 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Excepciones;
+using System.Xml.Serialization;
 
 namespace Entidades
 {
-
-   /* public enum Tipo
-    {
-        celular,
-        computadora
-    }*/
-    
+    [Serializable]
     public class Producto
     {
-        private double precio;
+        #region Atributos
+        private bool pasoControlCalidad;
+        private double costo;
         private int codigo;
         private string nombre;
-        //private Tipo tipo;
-
+        #endregion
+        #region Constructores
         /// <summary>
         /// Constructor. Inicializa los atributos del producto. 
         /// </summary>
         /// <param name="codigo">Codigo único del producto en la base de datos.</param>
         /// <param name="nombre">Nombre del producto.</param>
-        /// <param name="precio">Precio del producto.</param>
-        public Producto(int codigo, string nombre, double precio)
+        /// <param name="costo">Costo del producto.</param>
+        /// <param name="controCalidad">true si paso control de calidad sino false</param>
+
+        public Producto(int codigo, string nombre, double costo, bool controlCalidad)
         {
-            this.codigo = codigo;
-            this.Precio = precio;
+            this.Codigo = codigo;
+            this.Costo = costo;
             this.Nombre = nombre;
-            //this.tipo = tipo;
+            this.pasoControlCalidad = controlCalidad;
         }
         public Producto()
         {
 
         }
-
-       /* /// <summary>
-        /// Tipo de producto. Debe ser alguna de las dos opciones(celular o computadora). 
-        /// </summary>
-        public Tipo Tipo
-        {
-            get
-            {
-                if (tipo == Tipo.celular || tipo == Tipo.computadora)
-                {
-                    return this.tipo;
-                }
-                return Tipo.celular;
-            }
-            set
-            {
-                this.tipo = value;
-            }
-
-        }
-        */
+        #endregion
+        #region Propiedades
         /// <summary>
-        /// Precio del producto. Debe ser mayor a 1. 
+        /// Costo del producto. Debe ser mayor a 1. 
         /// </summary>
-        public double Precio
+        
+        public double Costo
         {
             get
             {
-                return this.precio;
+                return this.costo;
             }
             set
             {
                 if (value >= 1)
                 {
-                    this.precio = value;
+                    this.costo = value;
                 }
             }
         }
@@ -107,17 +88,31 @@ namespace Entidades
             }
         }
 
+        public bool PasoControlCalidad
+        {
+            get
+            {
+                return this.pasoControlCalidad;
+            }
+            set
+            {
+                this.pasoControlCalidad = value;
+            }
+        }
+        #endregion
+        #region Metodos
         /// <summary>
-        /// Devuelve un string con los datos de un producto: código, nombre, precio y concepto. 
+        /// Devuelve un string con los datos de un producto: código, nombre, costo y concepto. 
         /// </summary>
         /// <returns></returns>
         public override string ToString()
         {
             StringBuilder cadena = new StringBuilder();
-            cadena.AppendLine(String.Format($"Código: {this.Codigo}" ));
-            cadena.AppendLine(String.Format($"Nombre: {this.Nombre}" ));
-            cadena.AppendLine(String.Format("Precio: ${0:0.00}", this.Precio));
-            //cadena.AppendLine(String.Format($"Tipo de producto{this.Tipo}"));
+            cadena.Append(String.Format($"{this.Codigo}," ));
+            cadena.Append(String.Format($"{this.Nombre}," ));
+            //cadena.Append(String.Format("Costo: ${0:0.00},",this.Costo));
+            cadena.Append(ExtensionCosto.FormatearCosto(this.Costo));
+            cadena.Append(String.Format($"{this.PasoControlCalidad},"));
 
             return cadena.ToString();
         }
@@ -129,11 +124,12 @@ namespace Entidades
         /// <returns></returns>
         private static string ValidarNombre(string nombre)
         {
+
             bool esValido = true;
             char[] cadena = nombre.ToCharArray();
             for (int i = 0; i < cadena.Length; i++)
             {
-                if (cadena[i] < 'a' && cadena[i] > 'z' || cadena[i] < 'A' && cadena[i] > 'Z')
+                if (!char.IsLetter(cadena[i]))
                 {
                     esValido = false;
                     break;
@@ -142,13 +138,22 @@ namespace Entidades
             if (esValido)
             {
                 return nombre;
-            }
-            else
+            }else
             {
                 throw new NombreProductoExeption("Error. Nombre invalido!");
             }
 
         }
 
+        public static bool operator ==(Producto p1, Producto p2)
+        {
+            return p1.Codigo == p2.Codigo;
+        }
+
+        public static bool operator !=(Producto p1, Producto p2)
+        {
+            return !(p1 == p2);
+        }
+        #endregion
     }
 }
