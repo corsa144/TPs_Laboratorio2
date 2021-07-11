@@ -111,7 +111,7 @@ namespace Entidades
             cadena.Append(String.Format($"{this.Codigo}," ));
             cadena.Append(String.Format($"{this.Nombre}," ));
             //cadena.Append(String.Format("Costo: ${0:0.00},",this.Costo));
-            cadena.Append(ExtensionCosto.FormatearCosto(this.Costo));
+            cadena.Append("$" + ExtensionCosto.FormatearCosto(this.Costo) + ",");
             cadena.Append(String.Format($"{this.PasoControlCalidad},"));
 
             return cadena.ToString();

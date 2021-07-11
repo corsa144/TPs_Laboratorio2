@@ -9,9 +9,18 @@ namespace Entidades
 {
     public class SQL
     {
+        private SqlConnection sqlConnection;
+        private string connectionString;
+
+        public SQL()
+        {
+            this.connectionString = "Server=.;Database=Corsaro.Cristian.TPFinal;Trusted_Connection=True";
+            this.sqlConnection = new SqlConnection(connectionString); //Se encarga de realizar la conexion.
+        }
+
         public bool GuardarSQL(List<Producto> productos)
         {
-            string connectionString = "Server=.;Database=Corsaro.Cristian.TPFinal;Trusted_Connection=True";
+            //string connectionString = "Server=.;Database=Corsaro.Cristian.TPFinal;Trusted_Connection=True";
             bool seGuardo = false;
             StringBuilder sb = new StringBuilder();
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
@@ -87,16 +96,23 @@ namespace Entidades
                 sb.Append(";");
                 command += sb.ToString();
                 SqlCommand sqlCommand = new SqlCommand(command, sqlConnection);
-                sqlConnection.Open();
-                sqlCommand.ExecuteNonQuery();
-                seGuardo = true;
+                try
+                {
+                    sqlConnection.Open();
+                    sqlCommand.ExecuteNonQuery();
+                    seGuardo = true;
+                }
+                catch (Exception)
+                {
+                    seGuardo = false;
+                }
                 return seGuardo;
             }
         }
 
         public List<Producto> LeerSQL()
         {
-            string connectionString = "Server=.;Database=Corsaro.Cristian.TPFinal;Trusted_Connection=True";
+            //string connectionString = "Server=.;Database=Corsaro.Cristian.TPFinal;Trusted_Connection=True";
             //StringBuilder log = new StringBuilder();
             List<Producto> p = new List<Producto>();
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))

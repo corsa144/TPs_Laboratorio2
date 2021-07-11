@@ -1,1 +1,1 @@
-Computadora,7,lenovodos,135778,False,Notebook,SinSistemaOperativo,
+Computadora,11,Lenovo,$22000.00,False,Notebook,SinSistemaOperativo,

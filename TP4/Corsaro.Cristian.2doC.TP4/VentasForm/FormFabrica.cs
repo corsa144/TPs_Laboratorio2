@@ -10,18 +10,23 @@ using System.Windows.Forms;
 using Entidades;
 using Excepciones;
 using Archivos;
+using System.Threading;
 
 namespace FabricaForm
 {
+    public delegate void DelegadoClickGuardar();
     public partial class FormFabrica : Form
     {
+        public event DelegadoClickGuardar EventoClickGuardar;
         Fabrica fabrica;
         Celular celular;
         Computadora computadora;
+        List<Thread> hilos;
         public FormFabrica()
         {
             InitializeComponent();
             fabrica = Fabrica.GetFabrica((UInt32)this.nudCantidad.Value);
+            hilos = new List<Thread>();
         }
         /// <summary>
         /// Carga los datos al producto desde el formulario.
@@ -49,6 +54,13 @@ namespace FabricaForm
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.cmbGuardar.Items.Add("Computadoras");
+            this.cmbGuardar.Items.Add("Celulares");
+            this.cmbGuardar.Items.Add("Todo");
+            this.cmbGuardar.SelectedValue = "Computadoras";
+            this.cmbGuardar.SelectedText = "Computadoras";
+            this.cmbGuardar.SelectedIndex = 0;
+            this.EventoClickGuardar += this.GuardarTexto;
             //this.Cargar_ComboBox();
             //this.cmbProductos.SelectedItem = "Computadora";
         }
@@ -59,11 +71,15 @@ namespace FabricaForm
         /// <param name="e"></param>
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if(!object.ReferenceEquals(fabrica,null))
+            this.EventoClickGuardar.Invoke();
+        }
+
+        private void GuardarXml()
+        {
+            if (!object.ReferenceEquals(fabrica, null))
             {
                 try
                 {
-                    fabrica.Guardar();
                     if (fabrica.GuardarXml())
                     {
                         MessageBox.Show("Se guardaron los celulares");
@@ -72,6 +88,31 @@ namespace FabricaForm
                     {
                         MessageBox.Show("No se guardaron los celulares");
                     }
+                }
+                catch (ArchivosException)
+                {
+                    MessageBox.Show("No se puede guardar.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"{ex.Message}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe cargar la fabrica");
+            }
+        }
+
+        private void GuardarTexto()
+        {
+            Thread hilo = new Thread(fabrica.Guardar);
+            hilos.Add(hilo);
+            if (!object.ReferenceEquals(fabrica, null))
+            {
+                try
+                {
+                    hilo.Start();
                     MessageBox.Show("Se guardaron las computadoras!");
                 }
                 catch (ArchivosException)
@@ -87,9 +128,7 @@ namespace FabricaForm
             {
                 MessageBox.Show("Debe cargar la fabrica");
             }
-
         }
-
         private void btnAgregarProducto_Click(object sender, EventArgs e)
         {
             FormProducto formularioProducto = new FormProducto(fabrica);
@@ -103,7 +142,11 @@ namespace FabricaForm
             this.rtbMostrar.Clear();
             this.rtbMostrar.Text = fabrica.MostrarProductos();
         }
-
+        /// <summary>
+        /// Guarda en la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGuardarSQL_Click(object sender, EventArgs e)
         {
             SQL sql = new SQL();
@@ -116,12 +159,49 @@ namespace FabricaForm
                 MessageBox.Show("No se guardó!");
             }
         }
-
+        /// <summary>
+        /// Lee de la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLeerSQL_Click(object sender, EventArgs e)
         {
             SQL sql = new SQL();
             fabrica.Productos = sql.LeerSQL();
             this.mostrarProductos();
+        }
+        /// <summary>
+        /// Aborto todos los hilos antes de cerrar el programa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FormFabrica_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            foreach (Thread t in this.hilos)
+            {
+                if (!object.ReferenceEquals(t, null) && t.IsAlive)
+                {
+                    t.Abort();
+                }
+            }
+        }
+
+        private void cmbGuardar_SelectedValueChanged(object sender, EventArgs e)
+        {
+            this.EventoClickGuardar -= this.GuardarXml;
+            this.EventoClickGuardar -= this.GuardarTexto;
+            if (this.cmbGuardar.SelectedIndex == 0)
+            {
+                this.EventoClickGuardar += this.GuardarTexto;
+            }else if(this.cmbGuardar.SelectedIndex == 1)
+            {
+                this.EventoClickGuardar += this.GuardarXml;
+            }
+            else
+            {
+                this.EventoClickGuardar += this.GuardarXml;
+                this.EventoClickGuardar += this.GuardarTexto;
+            }
         }
     }
 }

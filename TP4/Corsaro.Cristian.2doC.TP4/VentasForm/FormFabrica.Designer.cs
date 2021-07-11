@@ -36,7 +36,10 @@
             this.rtbMostrar = new System.Windows.Forms.RichTextBox();
             this.btnGuardarSQL = new System.Windows.Forms.Button();
             this.btnLeerSQL = new System.Windows.Forms.Button();
+            this.gBGuardar = new System.Windows.Forms.GroupBox();
+            this.cmbGuardar = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
+            this.gBGuardar.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLeerTexto
@@ -51,7 +54,7 @@
             // 
             // btnGuardarTexto
             // 
-            this.btnGuardarTexto.Location = new System.Drawing.Point(177, 193);
+            this.btnGuardarTexto.Location = new System.Drawing.Point(13, 49);
             this.btnGuardarTexto.Name = "btnGuardarTexto";
             this.btnGuardarTexto.Size = new System.Drawing.Size(134, 45);
             this.btnGuardarTexto.TabIndex = 3;
@@ -105,7 +108,7 @@
             // 
             // btnGuardarSQL
             // 
-            this.btnGuardarSQL.Location = new System.Drawing.Point(177, 144);
+            this.btnGuardarSQL.Location = new System.Drawing.Point(324, 144);
             this.btnGuardarSQL.Name = "btnGuardarSQL";
             this.btnGuardarSQL.Size = new System.Drawing.Size(134, 43);
             this.btnGuardarSQL.TabIndex = 15;
@@ -123,19 +126,40 @@
             this.btnLeerSQL.UseVisualStyleBackColor = true;
             this.btnLeerSQL.Click += new System.EventHandler(this.btnLeerSQL_Click);
             // 
+            // gBGuardar
+            // 
+            this.gBGuardar.Controls.Add(this.cmbGuardar);
+            this.gBGuardar.Controls.Add(this.btnGuardarTexto);
+            this.gBGuardar.Location = new System.Drawing.Point(164, 144);
+            this.gBGuardar.Name = "gBGuardar";
+            this.gBGuardar.Size = new System.Drawing.Size(154, 100);
+            this.gBGuardar.TabIndex = 17;
+            this.gBGuardar.TabStop = false;
+            this.gBGuardar.Text = "Guardar:";
+            // 
+            // cmbGuardar
+            // 
+            this.cmbGuardar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGuardar.FormattingEnabled = true;
+            this.cmbGuardar.Location = new System.Drawing.Point(13, 19);
+            this.cmbGuardar.Name = "cmbGuardar";
+            this.cmbGuardar.Size = new System.Drawing.Size(134, 21);
+            this.cmbGuardar.TabIndex = 18;
+            this.cmbGuardar.SelectedValueChanged += new System.EventHandler(this.cmbGuardar_SelectedValueChanged);
+            // 
             // FormFabrica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(478, 489);
+            this.Controls.Add(this.gBGuardar);
             this.Controls.Add(this.btnLeerSQL);
             this.Controls.Add(this.btnGuardarSQL);
             this.Controls.Add(this.rtbMostrar);
             this.Controls.Add(this.nudCantidad);
             this.Controls.Add(this.lblCantidad);
             this.Controls.Add(this.btnAgregarProducto);
-            this.Controls.Add(this.btnGuardarTexto);
             this.Controls.Add(this.btnLeerTexto);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -144,8 +168,10 @@
             this.Name = "FormFabrica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fabrica";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormFabrica_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
+            this.gBGuardar.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,6 +186,8 @@
         private System.Windows.Forms.RichTextBox rtbMostrar;
         private System.Windows.Forms.Button btnGuardarSQL;
         private System.Windows.Forms.Button btnLeerSQL;
+        private System.Windows.Forms.GroupBox gBGuardar;
+        private System.Windows.Forms.ComboBox cmbGuardar;
     }
 }
 

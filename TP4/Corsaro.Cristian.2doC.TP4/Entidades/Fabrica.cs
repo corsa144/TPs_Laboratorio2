@@ -7,9 +7,12 @@ using System.IO;
 using Excepciones;
 using Archivos;
 using System.Xml.Serialization;
+using System.Threading;
+using System.Globalization;
 
 namespace Entidades
 {
+    //public delegate void MiDelegado();
     [Serializable]
     public class Fabrica 
     {
@@ -19,6 +22,8 @@ namespace Entidades
         private List<Producto> taller;
         private UInt32 almacenDeProductos;
         private static Fabrica fabrica;
+        //[field: NonSerialized]
+        //public event MiDelegado MiEvento;
         #endregion
         #region Constructores
         public Fabrica()
@@ -101,6 +106,7 @@ namespace Entidades
         /// <param name="info">La lista a convertir a texto </param>
         public void Guardar()
         {
+            Thread.Sleep(2000);
             List<Computadora> computadoras = new List<Computadora>();
             foreach(Producto p in this.Productos)
             {
@@ -170,7 +176,9 @@ namespace Entidades
                             eSistema = Computadora.ESistemaOperativo.SinSistemaOperativo;
                             break;                        
                     }
-                    Computadora computadora = new Computadora(int.Parse(campos[1]), campos[2], double.Parse(campos[3]),
+                    double precio = double.Parse(campos[3].Remove(0, 1), CultureInfo.InvariantCulture);
+                    //Para que tome el punto como una coma
+                    Computadora computadora = new Computadora(int.Parse(campos[1]), campos[2], precio,
                         tipo, eSistema, bool.Parse(campos[4]));
                     fabrica.Productos.Add(computadora);
                 }
