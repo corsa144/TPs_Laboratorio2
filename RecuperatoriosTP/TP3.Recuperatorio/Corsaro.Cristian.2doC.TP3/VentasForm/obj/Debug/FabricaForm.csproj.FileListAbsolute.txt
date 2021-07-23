@@ -80,3 +80,5 @@ C:\Users\sidea\source\repos\TPs_Laboratorio2\RecuperatoriosTP\TP3.Recuperatorio\
 C:\Users\sidea\source\repos\TPs_Laboratorio2\RecuperatoriosTP\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\VentasForm\obj\Debug\FabricaForm.csproj.CopyComplete
 C:\Users\sidea\source\repos\TPs_Laboratorio2\RecuperatoriosTP\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\VentasForm\obj\Debug\VentasForm.exe
 C:\Users\sidea\source\repos\TPs_Laboratorio2\RecuperatoriosTP\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\VentasForm\obj\Debug\VentasForm.pdb
+C:\Users\sidea\source\repos\TPs_Laboratorio2\RecuperatoriosTP\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\VentasForm\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\sidea\source\repos\TPs_Laboratorio2\RecuperatoriosTP\TP3.Recuperatorio\Corsaro.Cristian.2doC.TP3\VentasForm\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll

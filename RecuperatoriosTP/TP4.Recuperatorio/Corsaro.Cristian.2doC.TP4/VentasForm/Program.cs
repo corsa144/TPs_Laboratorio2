@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VentasForm
+namespace FabricaForm
 {
     static class Program
     {
@@ -18,7 +18,7 @@ namespace VentasForm
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new VentaForm());
+                Application.Run(new FormFabrica());
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);

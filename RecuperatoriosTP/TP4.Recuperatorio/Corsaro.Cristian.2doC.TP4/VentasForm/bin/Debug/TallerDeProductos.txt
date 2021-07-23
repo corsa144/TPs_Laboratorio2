@@ -1,0 +1,2 @@
+Computadora,1,pepepep,12356,True,Escritorio,Windows,
+Computadora,2,lalalala,5236,False,Escritorio,Windows,

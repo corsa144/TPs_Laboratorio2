@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCelular xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Celular>
+    <Costo>12345</Costo>
+    <Nombre>pepepeppe</Nombre>
+    <Codigo>1</Codigo>
+    <PasoControlCalidad>true</PasoControlCalidad>
+    <Sistema>Android</Sistema>
+  </Celular>
+</ArrayOfCelular>

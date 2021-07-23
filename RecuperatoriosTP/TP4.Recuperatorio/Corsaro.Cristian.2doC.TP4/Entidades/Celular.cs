@@ -3,28 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Entidades
 {
+    [Serializable]
     public class Celular:Producto
     {
-        public enum Compania
+        public enum SistemaOperativo
         {
-            Movistar,
-            Personal,
-            Claro,
-            Libre
+            Android,
+            IOS
         }
-        private Compania compania;
-
-        public Compania CompaniaCelular { get
+        private SistemaOperativo sistema;
+        public SistemaOperativo Sistema {
+            get
             {
-                return this.compania;
+                return this.sistema;
             }
 
             set
             {
-                this.compania = value;
+                this.sistema = value;
             }
         }
         public Celular()
@@ -32,10 +32,15 @@ namespace Entidades
 
         }
 
-        public Celular(int codigo, string nombre, double precio, Compania compania)
-            : base(codigo, nombre, precio)
+        public Celular(int codigo, string nombre, double costo, bool controlCalidad)
+          : base(codigo, nombre, costo, controlCalidad)
         {
-            this.CompaniaCelular = compania;
+
+        }
+        public Celular(int codigo, string nombre, double costo, SistemaOperativo compania, bool controlCalidad)
+            :this(codigo, nombre, costo, controlCalidad)
+        {
+            this.Sistema = compania;
         }
         /// <summary>
         /// sobreescribe el metodo ToString 
@@ -45,8 +50,9 @@ namespace Entidades
         public override string ToString()
         {
             StringBuilder mensaje = new StringBuilder();
-            mensaje.AppendLine(base.ToString());
-            mensaje.AppendLine($"Este celular es {this.CompaniaCelular}");
+            mensaje.Append("Celular,");
+            mensaje.Append(base.ToString());
+            mensaje.Append($"{this.Sistema},");
             return mensaje.ToString();
         }
     }

@@ -7,4 +7,11 @@
     <PasoControlCalidad>true</PasoControlCalidad>
     <Sistema>Android</Sistema>
   </Celular>
+  <Celular>
+    <Costo>15236</Costo>
+    <Nombre>Samsung</Nombre>
+    <Codigo>1</Codigo>
+    <PasoControlCalidad>true</PasoControlCalidad>
+    <Sistema>Android</Sistema>
+  </Celular>
 </ArrayOfCelular>
