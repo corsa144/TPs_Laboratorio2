@@ -30,6 +30,7 @@ namespace FabricaForm
         /// <param name="e"></param>
         private void btnRepararDespachar_Click(object sender, EventArgs e)
         {
+            bool codigoInvalido = true;
             if (estado)
             {
                 if (!ReferenceEquals(fabrica.Productos, null))
@@ -43,6 +44,7 @@ namespace FabricaForm
                             {
                                 item.PasoControlCalidad = true;
                                 MessageBox.Show("Se reparó el producto");
+                                codigoInvalido = false;
                             }
                             else
                             {
@@ -65,6 +67,7 @@ namespace FabricaForm
                             {
                                 fabrica.Productos.RemoveAt(i);
                                 MessageBox.Show("Se despachó el producto");
+                                codigoInvalido = false;
                             }
                             else
                             {
@@ -74,8 +77,25 @@ namespace FabricaForm
                     }
                 }
             }
+
+            if (codigoInvalido)
+            {
+                MessageBox.Show("El codigo es invalido");
+            }
             this.formulario.mostrarProductos();
             this.Close();
+        }
+
+        private void RepararYDespacharForm_Load(object sender, EventArgs e)
+        {
+            if (this.estado)
+            {
+                this.btnRepararDespachar.Text = "Reparar producto";
+            }
+            else
+            {
+                this.btnRepararDespachar.Text = "Despachar producto";
+            }
         }
     }
 }

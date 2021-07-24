@@ -1,2 +1,3 @@
-Computadora,8,Lenovo,$100000.00,Pasó control de calidad,Escritorio,Windows,
 Computadora,7,Dell,$89000.00,No pasó control de calidad,Notebook,Linux,
+Computadora,8,Das,$100000.00,No pasó control de calidad,Escritorio,Windows,
+Computadora,9,Lenovo,$84000.00,Pasó control de calidad,Notebook,Windows,
