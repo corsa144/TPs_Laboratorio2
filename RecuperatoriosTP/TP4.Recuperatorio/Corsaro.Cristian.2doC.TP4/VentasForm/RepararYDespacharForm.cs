@@ -39,16 +39,23 @@ namespace FabricaForm
                     {
                         if(item.Codigo == this.nudRepararDespachar.Value)
                         {
-                            SQL sql = new SQL();
-                            if (sql.ModificarSQL(item.Codigo))
+                            if (!item.PasoControlCalidad)
                             {
-                                item.PasoControlCalidad = true;
-                                MessageBox.Show("Se reparó el producto");
-                                codigoInvalido = false;
+                                SQL sql = new SQL();
+                                if (sql.ModificarSQL(item.Codigo))
+                                {
+                                    item.PasoControlCalidad = true;
+                                    MessageBox.Show("Se reparó el producto");
+                                    codigoInvalido = false;
+                                }
+                                else
+                                {
+                                    MessageBox.Show("No se pudo modificar la base de datos");
+                                }
                             }
                             else
                             {
-                                MessageBox.Show("No se pudo modificar la base de datos");
+                                MessageBox.Show("El producto no necesita ser reparado");
                             }
                         }
                     }
@@ -62,16 +69,23 @@ namespace FabricaForm
                     {
                         if(fabrica.Productos[i].Codigo == this.nudRepararDespachar.Value)
                         {
-                            SQL sql = new SQL();
-                            if (sql.BorrarSQL(fabrica.Productos[i].Codigo))
+                            if (fabrica.Productos[i].PasoControlCalidad)
                             {
-                                fabrica.Productos.RemoveAt(i);
-                                MessageBox.Show("Se despachó el producto");
-                                codigoInvalido = false;
+                                SQL sql = new SQL();
+                                if (sql.BorrarSQL(fabrica.Productos[i].Codigo))
+                                {
+                                    fabrica.Productos.RemoveAt(i);
+                                    MessageBox.Show("Se despachó el producto");
+                                    codigoInvalido = false;
+                                }
+                                else
+                                {
+                                    MessageBox.Show("No se pudo despachar el producto");
+                                }
                             }
                             else
                             {
-                                MessageBox.Show("No se pudo despachar el producto");
+                                MessageBox.Show("No se puede despachar un producto defectuoso");
                             }
                         }
                     }
